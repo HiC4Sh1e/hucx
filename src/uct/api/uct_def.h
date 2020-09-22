@@ -1,5 +1,6 @@
 /**
 * Copyright (C) Mellanox Technologies Ltd. 2001-2019.  ALL RIGHTS RESERVED.
+* Copyright (C) Huawei Technologies Co., Ltd. 2019-2020.  ALL RIGHTS RESERVED.
 *
 * See file LICENSE for terms.
 */
@@ -17,7 +18,7 @@
 
 #define UCT_TL_NAME_MAX            10
 #define UCT_MD_COMPONENT_NAME_MAX  16
-#define UCT_MD_NAME_MAX            16
+#define UCT_MD_NAME_MAX            32 // TODO: change back to 16 after RoCE driver is fixed.
 #define UCT_DEVICE_NAME_MAX        32
 #define UCT_PENDING_REQ_PRIV_LEN   40
 #define UCT_TAG_PRIV_LEN           32

@@ -1,14 +1,11 @@
 /**_t
 * Copyright (C) Mellanox Technologies Ltd. 2001-2017.  ALL RIGHTS RESERVED.
+* Copyright (C) Huawei Technologies Co., Ltd. 2019-2020.  ALL RIGHTS RESERVED.
 *
 * See file LICENSE for terms.
 */
 
 #include "ucx_info.h"
-
-#ifdef HAVE_CONFIG_H
-#  include "config.h"
-#endif
 
 #include <ucs/async/async_int.h>
 #include <ucs/async/pipe.h>

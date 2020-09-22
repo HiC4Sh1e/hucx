@@ -1,12 +1,9 @@
 /**
 * Copyright (C) Mellanox Technologies Ltd. 2001-2015.  ALL RIGHTS RESERVED.
+* Copyright (C) Huawei Technologies Co., Ltd. 2019-2020.  ALL RIGHTS RESERVED.
 *
 * See file LICENSE for terms.
 */
-
-#ifdef HAVE_CONFIG_H
-#  include "config.h"
-#endif
 
 #include "ucx_info.h"
 

@@ -1,5 +1,6 @@
 /**
  * Copyright (C) Mellanox Technologies Ltd. 2001-2016.  ALL RIGHTS RESERVED.
+ * Copyright (C) Huawei Technologies Co., Ltd. 2019-2020.  ALL RIGHTS RESERVED.
  *
  * See file LICENSE for terms.
  */
@@ -107,6 +108,7 @@ void print_ucp_info(int print_opts, ucs_config_print_flags_t print_flags,
 
     status = ucp_config_read(NULL, NULL, &config);
     if (status != UCS_OK) {
+        printf("<Failed to read UCP configuration>\n");
         return;
     }
 
@@ -139,7 +141,7 @@ void print_ucp_info(int print_opts, ucs_config_print_flags_t print_flags,
         print_resource_usage(&usage, "UCP context");
     }
 
-    if (!(print_opts & (PRINT_UCP_WORKER|PRINT_UCP_EP))) {
+    if (!(print_opts & (PRINT_UCP_WORKER | PRINT_UCP_EP | PRINT_UCG | PRINT_UCG_TOPO))) {
         goto out_cleanup_context;
     }
 
