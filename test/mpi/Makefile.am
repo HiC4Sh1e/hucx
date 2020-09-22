@@ -11,6 +11,7 @@ LD = $(MPICC)
 # Test application for memory hooks when running with MPI
 # (some MPIs have hooks of their own and we make sure ours still work)
 noinst_PROGRAMS       = test_memhooks shmem_pingpong
+
 AM_CPPFLAGS           = \
     $(BASE_CPPFLAGS) \
     -DUCM_LIB_DIR="$(abs_top_builddir)/src/ucm/.libs" \
